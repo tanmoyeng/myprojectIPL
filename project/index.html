@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTS WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+ <header>
+    <div class="container" id="home">
+    <div class="logo">
+        <img src="https://www.seekpng.com/png/full/244-2443284_indian-premier-league-logo-vivo-ipl-2018-logo.png" alt="">
+    </div>
+    <div class="background">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Royal_Challengers_Bangalore_2020.svg/1200px-Royal_Challengers_Bangalore_2020.svg.png" id="logobg" alt="">
+    </div>
+    <div class="heading">
+        <h1 id="head">
+            Royal Challengers Bangalore
+        </h1>
+        <!--<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ex labore quaerat fugiat cupiditate impedit culpa blanditiis provident? Corporis recusandae debitis autem, tempore deserunt, dolorum quam a culpa aspernatur esse blanditiis aliquam voluptates numquam aut architecto asperiores. Eligendi exercitationem nesciunt sequi deleniti nisi inventore quod soluta? Aut saepe consectetur ad doloremque doloribus nobis facilis provident assumenda. Dolor asperiores magnam ad?</p>
+        -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem ullam officia soluta! Voluptas ipsum accusamus ipsa blanditiis eligendi voluptates ad similique unde nemo soluta. Exercitationem, asperiores aperiam dolores at velit quia neque quae dicta doloremque vero officiis voluptas corrupti.</p>
+            <button>MATCH NOW</button>
+    </div>
+    <!--main image-->
+    <div class="image">
+        <img id="myimage"src="https://www.crictracker.com/wp-content/uploads/2020/02/AB-de-Villiers-and-Virat-Kohli.jpg" alt="">
+    </div>
+    <!--now nav-->
+    <div class="navbar">
+        <ul>
+            <li><a href="#home" >HOME</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#STADIUM">STADIUM</a></li>
+            <li><a href="rank.html">RANK</a></li>
+            <li><a href="login.html">Log in</a></li>
+           <li><a href="Register.html">REGISTER</a></li>
+           <li><a href="#About us">ABOUT</a></li>
+        </ul>
+    </div>
+    <div class="empty">
+
+    </div>
+    <div class="list" id="team">
+        <ol>
+            <li onclick="myfun('https://nashermiles.blob.core.windows.net/uploads/media/source/dhQvbD-BackpackNMCSKCricketBlue_02.jpg','gold','Chennai Super Knigs','https://iconape.com/wp-content/png_logo_vector/ipl-chennai-super-kings-logo.png')">CSK</li>
+            <li onclick="myfun('https://navbharattimes.indiatimes.com/photo/msid-90281433,imgsize-74226/pic.jpg','blue','Delhi Capitals','https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Delhi_Capitals_Logo.svg/1200px-Delhi_Capitals_Logo.svg.png')">DC</li>
+            <li onclick="myfun('https://i.pinimg.com/564x/a5/b1/fc/a5b1fc39ed3426bd40dae51aea1c0887.jpg','blue','Mumbai Indians','https://iconape.com/wp-content/png_logo_vector/ipl-mumbai-indians-logo.png')">MI</li>
+            <li onclick="myfun('https://www.probatsman.com/wp-content/uploads/2022/11/Aaron-Finch-Andre-Russell-Venkatesh-Iyer-KKR-IPL.jpg','indigo','Kolkata Knight Riders','https://i.pinimg.com/564x/c8/e9/e6/c8e9e65d1d2f9d2472dd64a875c5c238.jpg')">KKR</li>
+            <li onclick="myfun('https://www.insidesport.in/wp-content/uploads/2022/03/9ce2ca55-d9cb-4b09-aaa7-57caf441c18a-1.jpg','purple','Rajastan Royals','https://iconape.com/wp-content/png_logo_vector/ipl-rajasthan-royals-logo.png')">RR</li>
+            <li onclick="myfun('https://www.probatsman.com/wp-content/uploads/2022/11/Nicholas-Pooran-Kane-Williamson-Romario-Shepherd-SRH-IPL.jpg','orange','Sunrises Hydrabade','data:image/jpeg;base64,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')">SRH</li>
+            <li onclick="myfun('https://www.mykhel.com/img/2020/10/chrisgayle-1602786810.jpg','red','Punjab Kings','https://iconape.com/wp-content/png_logo_vector/ipl-kings-xi-punjab-logo.png')">PBKS</li>
+            
+        </ol>
+    </div>
+
+
+</div>
+<script>
+    function myfun(image,colour,head,logo){
+        document.getElementById('myimage').src=image;
+        document.querySelector('.empty').style.backgroundColor=colour;
+        document.querySelector('button').style.backgroundColor=colour;
+        document.getElementById('head').innerHTML=head;
+        document.getElementById('logobg').src=logo;
+
+    }
+</script> 
+</header>
+
+<main class="main" id="STADIUM">
+  
+   <div class="container">
+    <div class="left-text">
+       <p class="fid">STADIUM OF IPL</p>
+        <p class="subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum est quam assumenda eum debitis nihil natus ab blanditiis aliquid non.</p>
+    </div>
+    <div class="gallery">
+        <div class="box"  style=" background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj80yDx-qefhLyx4qGYex4ittB03PPfZnjmPjEVspYe3mS8hjPQq_uQYSqkNccn7o35Uo&usqp=CAU');"> Chinaswami Stadium</div>
+        <div class="box" style=" background-image: url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-7ulj7j7d3q9q32j1pp93e9mma0-20211125131519.jpeg');">MD Chidambarm Stadium</div>
+        <div class="box" style=" background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c0/Eden_Gardens_View.jpg');">Eden-Garden Stadium</div>
+        <div class="box" style=" background-image: url('https://static.toiimg.com/photo/msid-90279002/90279002.jpg');">feroz_shah_kotla_stadium</div>
+        <div class="box" style=" background-image: url('https://qph.cf2.quoracdn.net/main-qimg-c5995e91326652b24afedab77aabd31c-lq');">Rajiv_gandhi_stadium</div>
+        <div class="box" style=" background-image: url('http://1.bp.blogspot.com/-EYwMF0Gs-PQ/UBEueMG0B7I/AAAAAAAAAgg/wRjlQ-7MpbY/s640/Night+View+Wankhade+Stadium.jpg');">Wankhede Stadium</div>
+        <div class="box" style=" background-image: url('https://customercarecontacts.com/wp-content/uploads/2018/03/Sawai-Mansingh-Stadium.jpg');">Indore Stadium</div>
+        <div class="box" style=" background-image: url('https://smedia2.intoday.in/indiatoday/images/stories/2014March/punjab_650_041114054907.jpg');">Holkar Stadium</div>
+    </div>
+   </div>
+</main>
+
+<footer class="footer" id="About us">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>
+               ipl-web
+                </h4>
+                <ul>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">about us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                 our community
+                </h4>
+                <ul>
+                    <li><a href="#">community</a></li>
+                    <li><a href="#">meetups</a></li>
+                    <li><a href="#">forums</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    AWARDS
+                </h4>
+                <ul>
+                    <li><a href="#">orange cap</a></li>
+                    <li><a href="#">purple cap </a></li>
+                    <li><a href="#">Man Of The Tournament</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    HOST
+                </h4>
+                <ul>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Kolkata</a></li>
+                    <li><a href="#">Bengaluru</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>
+                    follow us
+                </h4>
+         <div class="social-links">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <br>
+            <br>
+            <p>@janatanmoy729@gmail.com</p>
+
+         </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+
+
+</body>
+</html>
