@@ -62,7 +62,7 @@ header{
     margin-left: 60%;
     width: 500px;
     height: 350px;
-    -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,rgb(0,0,0,0.4));
+   -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,rgb(0,0,0,0.4));
 }
 .container .navbar ul{
     display: flex;
